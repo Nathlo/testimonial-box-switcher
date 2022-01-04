@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@100;400;700&display=swap");
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -15,6 +17,37 @@ body {
   overflow: hidden;
   margin: 0;
   padding: 10px;
+}
+
+.info {
+  background-color: thistle;
+  color: rgb(165, 108, 108);
+  font-family: "Roboto";
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  top: 30px;
+  left: 0;
+  z-index: 200;
+}
+h2.project {
+  font-weight: 700;
+  font-size: 25px;
+}
+p.challenge {
+  font-weight: 400;
+  font-size: 20px;
+}
+.tools {
+  font-weight: 100;
+  font-size: 18px;
+}
+.author {
+  font-weight: 400;
+  font-size: 15px;
 }
 
 .title {
@@ -46,6 +79,7 @@ i {
 }
 
 .testimonial {
+  padding: 25px 0;
   line-height: 25px;
   text-align: justify;
 }
@@ -94,5 +128,13 @@ i {
 
   .fa-quote {
     display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 130px;
   }
 }
